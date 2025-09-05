@@ -1,3 +1,20 @@
+let local = {};
+try { local = require('./config.json'); } catch (_) {}
+
+const CONFIG = {
+  token: process.env.DISCORD_TOKEN || local.token,
+  clientId: process.env.DISCORD_CLIENT_ID || local.clientId,
+  guildId: process.env.DISCORD_GUILD_ID || local.guildId,
+  ministryChannelId: process.env.MINISTRY_CHANNEL_ID || local.ministryChannelId,
+  monthlyHourQuota: Number(process.env.MONTHLY_HOUR_QUOTA || local.monthlyHourQuota || 160),
+  allowedRoleIds: (process.env.ALLOWED_ROLE_IDS || '').split(',').filter(Boolean) || local.allowedRoleIds || []
+};
+
+if (!CONFIG.token) {
+  console.error('❌ لا يوجد توكن. ضعه في DISCORD_TOKEN أو في config.json (محلي فقط).');
+  process.exit(1);
+}
+
 const {
   Client,
   GatewayIntentBits,
@@ -17,8 +34,10 @@ const path = require("path");
 const dayjs = require("dayjs");
 require("dayjs/locale/ar");
 
-const config = require("./config.json");
-dayjs.locale("ar");
+require("dotenv").config();
+client.login(process.env.TOKEN);
+
+
 
 // مسار لحفظ البيانات
 const leavesFile = path.join(__dirname, "data", "leaves.json");
@@ -63,10 +82,10 @@ const commands = [
     )
 ].map(cmd => cmd.toJSON());
 
-const rest = new REST({ version: "10" }).setToken(config.token);
+const rest = new REST({ version: "10" }).setToken(CONFIG.token);
 (async () => {
   try {
-    await rest.put(Routes.applicationGuildCommands(config.clientId, config.guildId), { body: commands });
+    await rest.put(Routes.applicationGuildCommands(CONFIG.clientId, CONFIG.guildId), { body: commands });
     console.log("✅ تم تسجيل الأوامر");
   } catch (err) {
     console.error(err);
@@ -169,7 +188,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   .setFooter({ text: `📅 التاريخ والوقت: ${dayjs().format('YYYY-MM-DD HH:mm')}` });
 
       // إرسال للغرفة
-      const channel = await client.channels.fetch(config.ministryChannelId);
+      const channel = await client.channels.fetch(CONFIG.ministryChannelId);
       await channel.send({ embeds: [embed] });
 
       // إرسال للشخص
