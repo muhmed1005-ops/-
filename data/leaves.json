@@ -1,0 +1,105 @@
+{
+  "875444020623601694": [
+    {
+      "id": "mf5v3ko3",
+      "userId": "875444020623601694",
+      "name": "الشمري",
+      "rank": "لواء",
+      "sector": "القوات الخاصة",
+      "startDate": "2025-04-08T22:00:00.000Z",
+      "endDate": "2025-05-08T22:00:00.000Z",
+      "reason": "مسافر",
+      "durationHours": 744
+    },
+    {
+      "id": "mf5vpm7z",
+      "userId": "875444020623601694",
+      "name": "hgdh",
+      "rank": "sdfd",
+      "sector": "sdfdfs",
+      "startDate": "2025-04-08T22:00:00.000Z",
+      "endDate": "2025-05-08T22:00:00.000Z",
+      "reason": "dsf",
+      "durationHours": 744
+    },
+    {
+      "id": "mf5w27ug",
+      "userId": "875444020623601694",
+      "name": "sdf",
+      "rank": "sdf",
+      "sector": "sdf",
+      "startDate": "2025-04-08T22:00:00.000Z",
+      "endDate": "2025-06-08T22:00:00.000Z",
+      "reason": "dfs",
+      "durationHours": 1488
+    },
+    {
+      "id": "mf5xsvyu",
+      "userId": "875444020623601694",
+      "submittedBy": "512275583120703491",
+      "nameRank": "الشمري",
+      "sector": "القوات الخاصة",
+      "startDate": "2025-09-09T22:00:00.000Z",
+      "endDate": "2025-09-11T22:00:00.000Z",
+      "reason": "مشغول",
+      "durationHours": 72
+    }
+  ],
+  "512275583120703491": [
+    {
+      "id": "mf5xoy2g",
+      "userId": "512275583120703491",
+      "submittedBy": "875444020623601694",
+      "nameRank": "adf",
+      "sector": "asf",
+      "startDate": "2025-09-03T22:00:00.000Z",
+      "endDate": "2025-09-05T22:00:00.000Z",
+      "reason": "f",
+      "durationHours": 72
+    },
+    {
+      "id": "mf5ylhwd",
+      "userId": "512275583120703491",
+      "submittedBy": "875444020623601694",
+      "nameRank": "zcvx",
+      "sector": "xczv",
+      "startDate": "2025-09-04T22:00:00.000Z",
+      "endDate": "2025-09-06T22:00:00.000Z",
+      "reason": "'",
+      "durationHours": 72
+    },
+    {
+      "id": "mf5ynp60",
+      "userId": "512275583120703491",
+      "submittedBy": "875444020623601694",
+      "nameRank": "h",
+      "sector": "h",
+      "startDate": "2025-09-04T22:00:00.000Z",
+      "endDate": "2025-09-05T22:00:00.000Z",
+      "reason": "l",
+      "durationHours": 48
+    },
+    {
+      "id": "mf5yzv18",
+      "userId": "512275583120703491",
+      "submittedBy": "875444020623601694",
+      "nameRank": "d",
+      "sector": "d",
+      "startDate": "2025-09-04T22:00:00.000Z",
+      "endDate": "2025-09-06T22:00:00.000Z",
+      "reason": "l",
+      "durationHours": 72
+    },
+    {
+      "id": "mf5ztmcc",
+      "userId": "512275583120703491",
+      "submittedBy": "875444020623601694",
+      "nameRank": "d",
+      "sector": "d",
+      "startDate": "2025-09-05T22:00:00.000Z",
+      "endDate": "2025-09-06T22:00:00.000Z",
+      "reason": ".",
+      "durationHours": 48
+    }
+  ]
+}

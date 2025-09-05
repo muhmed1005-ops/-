@@ -1,0 +1,17 @@
+{
+  "name": "military-leave-bot",
+  "version": "1.0.0",
+  "description": "Fivem Military Leave Manager (Arabic)",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.11",
+    "discord.js": "^14.15.3",
+    "fs-extra": "^11.2.0",
+    "node-cron": "^3.0.3"
+  }
+}
